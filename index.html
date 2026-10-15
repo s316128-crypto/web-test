@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鄞挺勛｜個人網站</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Noto Sans TC", Arial, sans-serif;
+      background: #0b1020;
+      color: white;
+      line-height: 1.8;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: rgba(11, 16, 32, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #67e8d3;
+    }
+
+    nav a {
+      color: #d1d5db;
+      text-decoration: none;
+      margin-left: 22px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #67e8d3;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: radial-gradient(
+        circle at top,
+        #263568,
+        #0b1020 65%
+      );
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #67e8d3;
+    }
+
+    .hero p {
+      color: #b7c0d8;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 30px;
+      background: #67e8d3;
+      color: #0b1020;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px #67e8d344;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .section-title {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title span {
+      color: #67e8d3;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: #c3cbe0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      padding: 30px;
+      background: #151c30;
+      border: 1px solid #29334c;
+      border-radius: 18px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #67e8d3;
+    }
+
+    .card h3 {
+      color: #67e8d3;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #b7c0d8;
+    }
+
+    .contact {
+      text-align: center;
+      background: #11182a;
+    }
+
+    .contact p {
+      color: #b7c0d8;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: #8993ac;
+      border-top: 1px solid #29334c;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 8px;
+        font-size: 14px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 60px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 導覽列 -->
+  <header>
+    <div class="logo">YT.</div>
+
+    <nav>
+      <a href="#home">首頁</a>
+      <a href="#about">關於我</a>
+      <a href="#projects">我的作品</a>
+      <a href="#contact">聯絡我</a>
+    </nav>
+  </header>
+
+  <!-- 首頁 -->
+  <section class="hero" id="home">
+    <div>
+      <h1>你好，我是<span>鄞挺勛</span></h1>
+      <p>保持好奇，持續學習，創造屬於自己的可能。</p>
+      <a href="#about" class="btn">認識我 ↓</a>
+    </div>
+  </section>
+
+  <!-- 關於我 -->
+  <section id="about">
+    <h2 class="section-title">關於<span>我</span></h2>
+
+    <div class="about">
+      <p>
+        哈囉！我是鄞挺勛，歡迎來到我的個人網站。
+        這裡會分享我的興趣、學習經歷、作品，
+        以及生活中值得記錄的點滴。
+        希望能持續學習、突破自己，完成更多有趣的事情！
+      </p>
+    </div>
+  </section>
+
+  <!-- 作品展示 -->
+  <section id="projects">
+    <h2 class="section-title">我的<span>作品</span></h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>作品一</h3>
+        <p>這裡可以介紹你的第一個作品或專題。</p>
+      </div>
+
+      <div class="card">
+        <h3>作品二</h3>
+        <p>分享你參與的活動、學習成果或個人計畫。</p>
+      </div>
+
+      <div class="card">
+        <h3>未來目標</h3>
+        <p>寫下你未來想挑戰的事情與目標。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 聯絡我 -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">聯絡<span>我</span></h2>
+
+    <p>感謝你來參觀我的個人網站！</p>
+
+    <a class="btn" href="mailto:hello@example.com">
+      寄信給我
+    </a>
+  </section>
+
+  <!-- 頁尾 -->
+  <footer>
+    <p>© <span id="year"></span> 鄞挺勛｜個人網站</p>
+  </footer>
+
+  <script>
+    // 自動顯示目前年份
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // 點擊導覽連結時平滑捲動
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function () {
+        console.log("前往：" + this.textContent);
+      });
+    });
+  </script>
+
+</body>
+</html>
